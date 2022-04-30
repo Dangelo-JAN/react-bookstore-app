@@ -22,7 +22,7 @@ Type these commands in your terminal or command line
 
 ## Authors
 
-👤 **Author1**
+👤 **Dangelo Arrivillaga**
 
 - GitHub: [@Dangelo-JAN](https://github.com/Dangelo-JAN)
 - LinkedIn: [Soluciones Empresriales Dangelo Arrivillaga](https://www.linkedin.com/in/soluciones-empresariales-dangelo-arrivillaga-2a144718a/)
