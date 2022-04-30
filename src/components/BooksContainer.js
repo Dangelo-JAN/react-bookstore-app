@@ -1,5 +1,6 @@
 import React from 'react';
 
+import BookForm from './BookForm';
 import BookItem from './BookItem';
 
 const BooksContainer = () => {
@@ -14,6 +15,7 @@ const BooksContainer = () => {
   return (
     <>
       <BookItem title={title} author={author} />
+      <BookForm />
     </>
   );
 };

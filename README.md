@@ -18,7 +18,9 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 Type these commands in your terminal or command line
 - `git clone https://github.com/Dangelo-JAN/react-bookstore-app.git`
+- `cd react-bookstore-app.git`
 - `npm install`
+- `npm start`
 
 ## Authors
 

@@ -7,6 +7,7 @@ const BookItem = ({ title, author }) => (
     <p>{title}</p>
     <div>Author</div>
     <p>{author}</p>
+    <button onClick={(e) => { e.preventDefault(); }} type="button">Remove</button>
   </>
 );
 
