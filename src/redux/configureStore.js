@@ -5,9 +5,9 @@ import Categories from './Categories/Categories';
 const store = configureStore({
   reducer: {
     books: Books,
-    categories: Categories
+    categories: Categories,
   },
-})
+});
 
 export default store;
 console.log(store.getState());

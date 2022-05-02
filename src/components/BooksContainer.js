@@ -10,7 +10,6 @@ const BooksContainer = () => {
     author: 'Stephen King',
   });
 
-
   const { title, author } = bookItem;
 
   return (

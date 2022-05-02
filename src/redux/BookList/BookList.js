@@ -19,5 +19,5 @@ export default function reducer(state = initialState, action) {
 }
 
 // Action Creators
-const createBooks = books => ({ type: CREATE, books });
-const removeBooks = books => ({ type: REMOVE, books });
+export const createBooks = (books) => ({ type: CREATE, books });
+export const removeBooks = (books) => ({ type: REMOVE, books });
