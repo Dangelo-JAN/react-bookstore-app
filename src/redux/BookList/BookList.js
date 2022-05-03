@@ -8,10 +8,10 @@ export default function reducer(state = initialState, action) {
   switch (action.type) {
     // do reducer stuff
     case CREATE:
-      return { ...state, action.createBook };
+      return [...state, action.createBook];
 
     case REMOVE:
-      return { ...state, action.removeBook };
+      return [...state, action.removeBook];
 
     default:
       return state;
