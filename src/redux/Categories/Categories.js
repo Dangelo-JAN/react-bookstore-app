@@ -1,5 +1,5 @@
 const CHECK_STATUS = 'react-bookstore-app/categories/CHECK_STATUS';
-const initialState = {};
+const initialState = [];
 
 // Reducer
 export default function reducer(state = initialState, action) {

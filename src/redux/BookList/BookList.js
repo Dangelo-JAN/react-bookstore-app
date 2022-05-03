@@ -1,7 +1,7 @@
 // Action Types
 const CREATE = 'react-bookstore-app/books/CREATE';
 const REMOVE = 'react-bookstore-app/books/REMOVE';
-const initialState = {};
+const initialState = [];
 
 // Reducer
 export default function reducer(state = initialState, action) {
@@ -11,7 +11,7 @@ export default function reducer(state = initialState, action) {
       return [...state, action.createBook];
 
     case REMOVE:
-      return [...state, action.removeBook];
+      return state.filter((book) => book.id !== action.book.id);
 
     default:
       return state;
