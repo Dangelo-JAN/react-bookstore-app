@@ -6,7 +6,7 @@ export default function reducer(state = initialState, action) {
   switch (action.type) {
     // do reducer stuff
     case CHECK_STATUS:
-      return { ...state };
+      return 'Under construction';
 
     default:
       return state;
