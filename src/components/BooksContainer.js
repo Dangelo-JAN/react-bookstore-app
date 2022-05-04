@@ -1,23 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import BookForm from './BookForm';
-import BookItem from './BookItem';
+import BooksList from './BooksList';
 
-const BooksContainer = () => {
-  const [bookItem] = useState({
-    id: 1,
-    title: 'The Green Mile',
-    author: 'Stephen King',
-  });
-
-  const { title, author } = bookItem;
-
-  return (
-    <>
-      <BookItem title={title} author={author} />
-      <BookForm />
-    </>
-  );
-};
+const BooksContainer = () => (
+  <>
+    <BooksList />
+    <BookForm />
+  </>
+);
 
 export default BooksContainer;

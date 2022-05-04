@@ -1,14 +1,32 @@
+import { v4 as uuidv4 } from 'uuid';
+
 // Action Types
 const CREATE = 'react-bookstore-app/books/CREATE';
 const REMOVE = 'react-bookstore-app/books/REMOVE';
-const initialState = [];
+const initialState = [
+  {
+    id: uuidv4(),
+    title: 'The Thin Red Line',
+    author: 'James Jones',
+  },
+  {
+    id: uuidv4(),
+    title: 'The Green Mile',
+    author: 'Stephen King',
+  },
+  {
+    id: uuidv4(),
+    title: 'Cowboy Bebop',
+    author: 'Hajime Yatate',
+  },
+];
 
 // Reducer
-export default function reducer(state = initialState, action) {
+export default function booksReducer(state = initialState, action) {
   switch (action.type) {
     // do reducer stuff
     case CREATE:
-      return [...state, action.createBook];
+      return [...state, action.book];
 
     case REMOVE:
       return state.filter((book) => book.id !== action.book.id);
@@ -19,5 +37,8 @@ export default function reducer(state = initialState, action) {
 }
 
 // Action Creators
-export const createBooks = (books) => ({ type: CREATE, books });
-export const removeBooks = (books) => ({ type: REMOVE, books });
+export const createBooks = (title, author) => ({
+  type: CREATE,
+  book: { id: uuidv4(), title, author },
+});
+export const removeBooks = (book) => ({ type: REMOVE, book });
