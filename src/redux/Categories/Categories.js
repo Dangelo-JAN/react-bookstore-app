@@ -6,7 +6,7 @@ export default function categoriesReducer(state = initialState, action) {
   switch (action.type) {
     // do reducer stuff
     case CHECK_STATUS:
-      return 'Under construction';
+      return [...state, action.categories];
 
     default:
       return state;
