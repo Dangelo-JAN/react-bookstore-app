@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { removeBooks } from '../redux/BookList/BookList';
+import { getBooks, removeBooks } from '../redux/BookList/BookList';
 
 const BookItem = () => {
   const books = useSelector((state) => state.books);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getBooks());
+  }, []);
 
   const handleRemoveBook = (book) => {
     dispatch(removeBooks(book));
@@ -19,7 +23,7 @@ const BookItem = () => {
             <span className="author">{book.author}</span>
           </div>
           <div className="control-buttons">
-            <button onClick={() => handleRemoveBook(book)} type="button">
+            <button onClick={() => handleRemoveBook(book.id)} type="button">
               Remove
             </button>
           </div>
