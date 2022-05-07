@@ -15,7 +15,7 @@ const Categories = () => {
     <>
       <div>
         <div>
-          <h1>Categories</h1>
+          <h2>Categories</h2>
           <ul>
             {categories.map((item) => (
               <li key={uuid()}>
@@ -24,7 +24,6 @@ const Categories = () => {
             ))}
           </ul>
         </div>
-
         <div className="Categories-content">
           <button type="button" onClick={() => handleCategories()}>
             Check Status

@@ -33,33 +33,28 @@ const BookItem = () => {
                 <button type="button" className="book-button">Edit</button>
               </div>
             </div>
-            
-            <div className="container">  
-            <div className="circle-container">
-              <div className="circle">
-                <div className="mask full">
-                  <div className="fill" />
+            <div className="container">
+              <div className="circle-container">
+                <div className="circle">
+                  <div className="mask full">
+                    <div className="fill" />
+                  </div>
+                  <div className="mask half">
+                    <div className="fill" />
+                  </div>
+                  <div className="inside-circle" />
                 </div>
-                <div className="mask half">
-                  <div className="fill" />
-                </div>
-                <div className="inside-circle" />
+              </div>
+              <div>
+                <p className="percentage repeated">75%</p>
+                <p className="completed repeated">completed</p>
               </div>
             </div>
-            <div>
-              <p className="percentage repeated">75%</p>
-              <p className="completed repeated">completed</p>
-            </div>
-            </div>
-
             <div className="third">
-            <p className="current repeated">CURRENT CHAPTER</p>
-            <p className="chapter repeated">Chapter 17</p>
-            <button className="progress-btn" type="button"><span className="progress repeated">UPDATE PROGRESS</span></button>
-          </div>
-
-
-
+              <p className="current repeated">CURRENT CHAPTER</p>
+              <p className="chapter repeated">Chapter 17</p>
+              <button className="progress-btn" type="button"><span className="progress repeated">UPDATE PROGRESS</span></button>
+            </div>
           </li>
         ))}
       </ul>
