@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ImUser } from 'react-icons/im';
-// import './components.css';
 
 const Navbar = () => (
   <nav className="container navbar">

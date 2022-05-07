@@ -24,8 +24,8 @@ const Categories = () => {
             ))}
           </ul>
         </div>
-        <div className="Categories-content">
-          <button type="button" onClick={() => handleCategories()}>
+        <div className="button-container">
+          <button type="button" className="category-button" onClick={() => handleCategories()}>
             Check Status
           </button>
         </div>
