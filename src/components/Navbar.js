@@ -6,7 +6,7 @@ const Navbar = () => (
   <nav className="container navbar">
     <div className="container">
       <h1>Bookstore CMS</h1>
-      <ul className="container">
+      <ul className="container ul-navbar">
         <li className=""><Link className="links" to="/" style={{ textDecoration: 'none' }}>Books</Link></li>
         <li className=""><Link className="links" to="categories" style={{ textDecoration: 'none' }}>Categories</Link></li>
       </ul>
